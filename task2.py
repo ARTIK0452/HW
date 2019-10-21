@@ -1,5 +1,4 @@
 operand = ['+', '-', '*', '/']
-print()
 a = input()
 b = input()
 c = str(input())
