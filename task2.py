@@ -1,5 +1,5 @@
 operand = ['+', '-', '*', '/']
-print('Ввод: ')
+print()
 a = input()
 b = input()
 c = str(input())
