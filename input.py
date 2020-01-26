@@ -28,11 +28,21 @@ class Tic_Tac_Toe(App):
         right.add_widget(score)
         right.add_widget(self.score)
         admin = BoxLayout()
-        admin.add_widget(left)
-        admin.add_widget(right)
+        root = GridLayout(cols = 3)
+        self.buttons = []
+        for i in range(9):
+            self.buttons.append(Button(text='', font_size = 40, on_press = self.game))
+        for i in range(9):
+            root.add_widget(self.buttons[i])
 
-        return right
-        return left
+
+        admin.add_widget(left)
+        admin.add_widget(root)
+        admin.add_widget(right)
+        return admin
+
+    def game(self, button):
+        pass
 
 Game = Tic_Tac_Toe()
 Game.run()
