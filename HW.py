@@ -16,7 +16,7 @@ class Ceasar:
         res2 = ""
         res3 = ""
         res4 = ""
-        res5 = ""
+        res4 = ""
         for i in range(len(self.input)):
             if ord(self.input[i]) >= ord('a') and ord(self.input[i]) <= ord('z'):
                 res += chr(ord(self.input[i]) + self.shift)
